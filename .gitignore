@@ -1,0 +1,9 @@
+# Editor files
+.idea
+.vscode
+
+node_modules
+package-lock.lock
+
+# Environment
+.env

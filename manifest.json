@@ -1,0 +1,10 @@
+{
+  "api": "1.0.0",
+  "editorType": [
+    "figma"
+  ],
+  "id": "preact-rectangles",
+  "name": "Figma Guru",
+  "main": "build/main.js",
+  "ui": "build/ui.js"
+}
