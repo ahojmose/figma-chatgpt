@@ -36,7 +36,7 @@ To watch for code changes and rebuild the plugin automatically:
 $ npm run watch
 ```
 
-### Install the plugin
+### Install the plugin in Figma
 
 1. In the Figma desktop app, open a Figma document.
 2. Search for and run `Import plugin from manifest…` via the Quick Actions search bar.
