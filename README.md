@@ -12,6 +12,12 @@ This is a very simple implementation of the OpenAI gpt-3.5-turbo model in Figma.
 - [Figma desktop app](https://figma.com/downloads/)
 - [OpenAI API Key](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key)
 
+### Install dependencies
+
+```
+$ npm install
+```
+
 ### Build the plugin
 
 Create an `.env` file, and add your OpenAI API key like this `OPENAI_API_KEY="Your OpenAI API key here"`. 
