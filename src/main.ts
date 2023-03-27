@@ -5,11 +5,10 @@ import { CloseHandler, RunCode } from './types'
 export default function () {
 
   on<RunCode>('RUN_CODE', function (code: string) {
-    console.log("Run code")
-
     let hasCodeMarkup
     let regex
 
+    // Extract code snippets from the response
     if (code.indexOf("```javascript") != -1) {
       hasCodeMarkup = "```javascript"
       regex = /```javascript\n([^`]+)```/g;
@@ -30,8 +29,6 @@ export default function () {
     if(regex) {
       const codeSnippet = regex.exec(code)![1];
       code = codeSnippet
-      console.log("NEW CODE")
-      console.log(code)
     }
     
     eval(code);

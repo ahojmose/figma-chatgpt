@@ -21,7 +21,7 @@
     "editorType": [
       "figma"
     ],
-    "id": "preact-rectangles",
+    "id": "figma-guru",
     "name": "Figma Guru",
     "main": "src/main.ts",
     "ui": "src/ui.tsx"

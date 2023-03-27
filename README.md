@@ -1,4 +1,6 @@
-# Preact Rectangles
+# Figma ChatGPT
+
+This is a very simple implementation of the OpenAI gpt-3.5-turbo model in Figma. I'm a designer, not a developer, so code could probably be optimised in many ways. Don't hesitate to create a PR if you want to contribute.
 
 ## Development guide
 
@@ -8,8 +10,11 @@
 
 - [Node.js](https://nodejs.org) – v18
 - [Figma desktop app](https://figma.com/downloads/)
+- [OpenAI API Key](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key)
 
 ### Build the plugin
+
+Create a .enc file, and add your OpenAI API key like this OPENAI_API_KEY="Your OpenAI API key here" 
 
 To build the plugin:
 
@@ -41,8 +46,3 @@ To open the developer console, search for and run `Open Console` via the Quick A
 
 - [Create Figma Plugin docs](https://yuanqing.github.io/create-figma-plugin/)
 - [`yuanqing/figma-plugins`](https://github.com/yuanqing/figma-plugins#readme)
-
-Official docs and code samples from Figma:
-
-- [Plugin API docs](https://figma.com/plugin-docs/)
-- [`figma/plugin-samples`](https://github.com/figma/plugin-samples#readme)

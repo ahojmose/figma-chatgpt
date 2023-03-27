@@ -13,7 +13,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 function Plugin() {
-  //console.log(process.env.OPENAI_API_KEY);
+  
   async function runCompletion (prompt:string) {
 
     try {
@@ -21,13 +21,11 @@ function Plugin() {
         model: "gpt-3.5-turbo",
         messages: [
           {role: "system", content: "You are a design assistant helping a product designer working in Figma using the Figma plugin API."},
-          {role: "user", content: prompt + ". Wrap any code examples in <code></code> blocks."}
+          {role: "user", content: prompt}
         ],
       });
       console.log(completion.data.choices[0].message.content);
       emit<RunCode>('RUN_CODE', completion.data.choices[0].message.content)
-      //runCode(completion.data.choices[0].message.content)
-      //emit<GenerateText>('GENERATE_TEXT', completion.data.choices[0].text)
   
     } catch (e) {
       console.log("Error getting GPT completion: ", e)
